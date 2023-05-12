@@ -9,7 +9,7 @@ function DesktopMenu() {
     <nav className="navbar desktop-navbar">
       <Box sx={{ height: "40%" }}>
         <Container sx={{ display: "flex", justifyContent: "flex-end" }}>
-          <IconButton>
+          <IconButton color="inherit">
             <LightModeIcon />
           </IconButton>
         </Container>

@@ -12,23 +12,24 @@ function HamburgerMenu() {
   return (
     <nav className="navbar mobile-navbar">
       <Box sx={{ height: "60%" }}>
-        <Toolbar
+        <Container
           sx={{
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            height:"100%"
           }}
         >
           <Typography variant="h5" component="h1">
             Coinmarket
           </Typography>
-          <IconButton>
+          <IconButton color="inherit" onClick={() => SetOpenMenu(true)}>
             <MenuIcon />
           </IconButton>
-        </Toolbar>
+        </Container>
       </Box>
       <Divider />
-      <Box sx={{ height: "40%" }}>Test</Box>
+      <Box sx={{ height: "40%" }}>Default text</Box>
       <LeftMenu openMenu={openMenu} SetOpenMenu={SetOpenMenu} />
     </nav>
   );
